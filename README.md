@@ -6,7 +6,8 @@
 
 ## Documentation
 
-Full documentation will be developed as time and resources permit. Meanwhile, some tips:
+Full documentation will be developed as time and resources permit. You may also visit our wiki at https://github.com/backdrop-contrib/modoc/wiki
+Meanwhile, here are some tips:
 - You may edit the file 'globals.css' (found in the themes/modoc/css folder) to easily change the page width, base font-size, and typefaces.
 - Particularly useful for side menus and blocks: you may add the css class 'hide-overflow' to any block through the UI (see below). this will truncate the contents rather than having them bleed into the body of the next layout column to the right.
 - The easiest way to get rid of all the block borders is to set the block border color the same as the page background color.
@@ -22,7 +23,6 @@ Full documentation will be developed as time and resources permit. Meanwhile, so
 
 ## Caveats
 
-- ~~The color schemes are not fully refined yet - some work is still required. They should be useful, however, as a starting point.~~
 - For vertical menus, be sure to set the Menu Style to 'Dropdown Menu' in order to make them look good. More work on this is pending.
 - More testing is required to make sure that menus work in every layout implementation, etc.
 ### To-Do
@@ -30,9 +30,7 @@ Full documentation will be developed as time and resources permit. Meanwhile, so
 - Move the type-face and page-width configurations into the Settings UI.
 - Also add a box and button corner radius selection, for more styling options.
 - Implement color gradients for buttons and block backgrounds.
-- Establish a documentation portal, and put stuff in it!
 - Continue the never-ending process of refining and cleaning up the css.
-- Test, test, test. Check every conceivable content configuration.
 - etc.
 
 ## Installation
@@ -76,6 +74,5 @@ This project is GPL v2 software. See the LICENSE.txt file in this directory for 
 ---
 ![screenshot4](https://user-images.githubusercontent.com/60248933/231575264-6b935fdf-2c6e-47ea-855a-9ed9250bad3e.png)
 ---
-![screenshot5](https://user-images.githubusercontent.com/60248933/231575203-13fe669f-b5d4-4a4e-a56d-1bd60ec4c504.png)
+![screenshot5](https://user-images.githubusercontent.com/60248933/232276871-79ad237f-4134-48b0-b28b-48c619a534f1.png)
 ---
-
