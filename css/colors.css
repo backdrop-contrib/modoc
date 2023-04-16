@@ -133,6 +133,11 @@ ul.links.inline a:hover,
   color: #0e0f0f;
 }
 
+.menu-toggle-button-icon::before,
+.menu-toggle-button-icon,
+.menu-toggle-button-icon::after {
+  background: #0e0f0f;
+}
 
 /*---------------------------*/
 /*   Table Rows              */

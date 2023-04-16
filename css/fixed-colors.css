@@ -58,8 +58,13 @@ input.button-primary {
   background: #d9f7d7;
 }
 
-.form-delete {
-  background: #f7f7f7 url("../img/mono-warn.png");
+.dropbutton-widget .delete,
+.dropbutton-widget .delete :hover,
+.form-delete,
+.delete-node, .delete-node :hover,
+.button-danger,
+#edit-delete {
+  background: #f7f7f7 url("../img/mono-warn.png") !important;
 }
 
 .vertical-tab-link {

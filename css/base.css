@@ -81,6 +81,7 @@
   display: block;
   flex: auto;
   padding: .5rem;
+  transform: translateY(3px); /* otherwise, it's not centered */
 }
 
 /**** not sure what these "item-list" things are... */

@@ -97,6 +97,10 @@ button:focus,
   text-decoration: none;
 }
 
+.menu-toggle-button {  /* This is a HACK -efoy */
+  transform: translateY(-3px);
+}
+
 input.button-primary:hover,
 input.button-primary:focus {
   box-shadow: 2px 2px 0 #000;
