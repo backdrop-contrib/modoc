@@ -2,7 +2,7 @@
 
 Designed with the use of tables and blocks in mind. 
 When you need to optimize screen real estate utilization.
-*Modoc is an excellent Admin Theme.*
+  *Modoc is an excellent Admin Theme.*
 
 ## Documentation
 
