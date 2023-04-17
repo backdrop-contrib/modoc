@@ -72,6 +72,7 @@ button,
   margin: .5em 1em .5em 0;
   padding: .2em .5em;
   border-radius: 5px;
+  background: transparent !important; /* experimental -efoy */
 }
 [dir="rtl"] button,
 [dir="rtl"] [type="button"],

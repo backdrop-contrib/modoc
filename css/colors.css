@@ -70,7 +70,7 @@ body,
 /*---------------------------*/
 /*   Footer Background       */
 
-.l-footer {
+.l-footer-inner .block {
   background: #bcc8c9;
 }
 
