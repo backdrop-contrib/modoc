@@ -1,102 +1,35 @@
 /**  globals.css  **/
-/*
-Here is where you may override any css property.
-In future releases of the Modoc Theme, we hope to provide these settings 
-in the theme settings user interface. Until then, you will need to make these 
-changes manualy be editing this file.
-*/
-/* Set the Page Width... */
-/* -------------------------------------------------------------------- */
-/* You may edit the line below to set the maximum displayed width of    */
-/* your web page. Most common units are either % (percentage of the     */
-/* browser window width) or px (number of screen pixels). For a         */
-/* complete list of allowed units, see                                  */
-/* https://www.w3schools.com/cssref/css_units.php                       */ 
-/* -------------------------------------------------------------------- */
+
+/* SET THE PAGE WIDTH... */
 
 .layout {max-width: 1200px;}
 
 
-/* SET THE PAGE WIDTH... */
-/* -------------------------------------------------------------------- */
-/* You may edit the line below to set the basic font size for your site.*/
-/* You may enter units of % (percentage of the browsers built-in base   */
-/* which is usually 16px.                                               */
-/* You may also specify the exact pixel height of the base size.        */
-/*                                                                      */
-/*     example: html { font-size: 16px; }                               */
-/*                                                                      */
-/* For information-intensive applications, I like to run 90%            */
-/* See https://www.w3schools.com/css/css_font_size.asp                  */
-/* -------------------------------------------------------------------- */
+/* SET THE BASE FONT SIZE */
 
 html { font-size: 90%; }
 
 
 /* PAGE BODY TEXT... */
-/* -------------------------------------------------------------------- */
-/* Copy one of these lines into the clear area below this comment block.*/
-/* -this will override the default which is defined in contents.css     */
-/*                                                                      */
-/* body {font: 1rem/1.7 'Open Sans', sans-serif;}                       */
-/* body {font: 1rem/1.7 'Montserrat', sans-serif;}                      */
-/* body {font: 1rem/1.7 'Lekton', serif;}                               */
-/* -------------------------------------------------------------------- */
 
 body {font: 1rem/1.7 'Open Sans', sans-serif;} 
 
 
 /* NODE TITLE and BLOCK HEADINGS TEXT... */
-/* -------------------------------------------------------------------- */
-/* Copy one of these lines into the clear area below this comment block.*/
-/* -this will override the default which is defined in contents.css     */
-/*                                                                      */
-/* h1,h2,h3,h4,h5 {font-family: 'Lekton', serif;}                       */
-/* h1,h2,h3,h4,h5 {font-family: 'Montserrat', serif;}                   */
-/* h1,h2,h3,h4,h5 {font-family: 'Open Sans', serif;}                    */
-/* -------------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5 {font-family: 'Lekton', serif;}
 
 
 /* MAIN MENU TEXT... */
-/* -------------------------------------------------------------------- */
-/* Copy one of these lines into the clear area below this comment block.*/
-/* -this will override the default which is defined in contents.css     */
-/*                                                                      */
-/* .block-system-main-menu a {font-family: 'Lekton', serif;}            */
-/* .block-system-main-menu a {font-family: 'Montserrat', serif;}        */
-/* .block-system-main-menu a {font-family: 'Open Sans', sans serif;}    */
-/* .block-system-main-menu a {font-family: 'News Cycle', serif;}        */
-/* .block-system-main-menu a {font-family: 'Bench Nine', serif;}        */
-/* -------------------------------------------------------------------- */
 
 .block-system-main-menu a { font-family: 'Lekton', serif; }
 
 
 /* SIDE BAR MENU TEXT... */
-/* -------------------------------------------------------------------- */
-/* Copy one of these lines into the clear area below this comment block.*/
-/* -this will override the default which is defined in contents.css     */
-/*                                                                      */
-/* .block-system-main-menu a {font-family: 'Lekton', serif;}            */
-/* .block-system-main-menu a {font-family: 'Montserrat', serif;}        */
-/* .block-system-main-menu a {font-family: 'Open Sans', sans serif;}    */
-/* .block-system-main-menu a {font-family: 'News Cycle', serif;}        */
-/* .block-system-main-menu a {font-family: 'Bench Nine', serif;}        */
-/* -------------------------------------------------------------------- */
 
 .block-menu-menu-sidebar a { font-family: 'Montserrat', serif;} 
     
     
 /* VIEWS TABLE HEADINGS TEXT... */
-/* -------------------------------------------------------------------- */
-/* Copy one of these lines into the clear area below this comment block.*/
-/* -this will override the default which is defined in contents.css     */
-/*                                                                      */
-/* th {font-family: 'News Cycle', sans-serif;}   /* narrow */           */
-/* th {font-family: 'Bench Nine', sans-serif;}   /* narrower */         */
-/* th {font-family: 'Open Sans', sans-serif;}    /* wider, normal */    */
-/* -------------------------------------------------------------------- */
 
 th {font-family: 'News Cycle', sans-serif;}
