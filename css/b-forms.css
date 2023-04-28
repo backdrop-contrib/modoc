@@ -64,6 +64,7 @@ input[disabled] {
   border: 1px dashed;
 }
 
+.admin-list a,
 button,
 [type="button"],
 [type="reset"],
@@ -72,7 +73,7 @@ button,
   margin: .5em 1em .5em 0;
   padding: .2em .5em;
   border-radius: 5px;
-  background: transparent !important; /* experimental -efoy */
+  /*background: transparent !important;  experimental -efoy */
 }
 [dir="rtl"] button,
 [dir="rtl"] [type="button"],
@@ -81,6 +82,7 @@ button,
   margin: .5em 0 .5em 1em;
 }
 
+.admin-list a:hover,
 button:hover,
 [type="button"]:hover,
 [type="reset"]:hover,
@@ -94,9 +96,38 @@ button:focus,
   text-decoration: none;
 }
 
+.admin-list a:hover,
 .button a:hover {
   text-decoration: none;
 }
+
+.admin-list dt,
+.admin-list dd {
+  box-sizing:border-box;
+  padding:.2rem;
+}
+
+.admin-list dt{
+  float: left;
+  margin-top: .5rem;
+}
+
+.admin-list dt + dd,
+.admin-list dd ~ dd {
+  border-top: 1px solid;
+  padding-bottom: 1rem;
+}
+
+.admin-list dd:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.admin-list .row2 + dd:after {
+    content:none;
+}
+
 
 .menu-toggle-button {  /* This is a HACK -efoy */
   transform: translateY(-3px);
@@ -182,13 +213,16 @@ fieldset .fieldset-title {
 .views-display-top {
     padding-top: .4rem;
 }
-/***************************************/
-
+/************************************** */
+/** This was added to solve issue #5. It sorta helps, but more is needed. */
+.js .dropbutton-wrapper {
+  width: 7rem;
+}
+/****** */
 .js .dropbutton li,
 .js .dropbutton a {
   text-align: initial;
 }
-
 .dropbutton-multiple .dropbutton,
 .dropbutton-toggle button {
   border-radius: 0;

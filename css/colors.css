@@ -77,7 +77,7 @@ body,
 /*---------------------------*/
 /*      Footer Text          */
 
-.l-footer * {
+.l-footer * :not(.layout-wrapper *) {
   color: #0f0e0f;
 }
 
