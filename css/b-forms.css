@@ -195,7 +195,7 @@ fieldset .fieldset-title {
   text-decoration: none;
   font-size: 1.1rem;
 }
-.collapsible {
+fieldset {
     border-radius: 5px;
 }
 /*********** Stuff for the Admin Theme */
