@@ -59,6 +59,10 @@ table {
   max-width: 100%;
 }
 
+.align-top {
+  vertical-align: top;
+}
+
 th {
   padding: .4rem;
   font-family: 'News Cycle', sans-serif;
@@ -67,7 +71,7 @@ th {
 }
 
 td {
-    padding: .2rem;
+    padding: .15rem 5px;
 }
 
 figure {

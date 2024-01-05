@@ -1,5 +1,10 @@
 /**   menus.css   **/
 
+/* I need to decide which CSS file to put this in. Just not sure yet. */
+.ui-dialog {
+  z-index: 1000 !important;
+}
+
 /****************************/
 /* not sure if these are really needed */
 /* I need to mess around some more...  */
@@ -61,9 +66,9 @@ a.leaf{
 }
 
 .menu-dropdown ul {
-    
   border-radius: 10px;
   box-shadow: 2px 2px 0;
+  z-index: 100;
 }
 
 /*
@@ -85,7 +90,7 @@ a.leaf{
 .js .menu-dropdown ul li > a.has-submenu,
 .js .menu-dropdown > li.has-children > a {
   padding: .5em 1em .5em 1em;
-  line-height: 1em; 
+  line-height: 1em;
 }
 .js .menu-dropdown a:hover, 
 .js .menu-dropdown a:focus, 

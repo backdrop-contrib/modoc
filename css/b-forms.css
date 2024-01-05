@@ -1,5 +1,26 @@
 /***  b-forms.css  ***/
 
+.views-exposed-form label {
+    text-decoration: underline;
+}
+.views-widget label {
+    text-decoration: none;
+}
+.view-grouping-header {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    text-align: left;
+    text-decoration: underline;
+    line-height: 2rem;
+    border-top: 1px solid;
+}
+.views-table caption {
+    font-size: 1.2rem;
+    text-align: left;
+    text-decoration: underline;
+    line-height: 3rem;
+}
 ul.primary {
   border-bottom: 1px solid;
   line-height: .5;
@@ -94,6 +115,19 @@ button:focus,
   box-shadow: 2px 2px 0;
   outline: none;
   text-decoration: none;
+}
+
+.admin-list a:active,
+button:active,
+a.form-cancel,
+[type="button"]:active,
+[type="reset"]:active,
+[type="submit"]:active {
+  box-shadow: 0 0;
+  border: 2px solid;
+  outline: none;
+  text-decoration: none;
+  transform: translateY(1px) translateX(1px);
 }
 
 .admin-list a:hover,
@@ -195,7 +229,8 @@ fieldset .fieldset-title {
   text-decoration: none;
   font-size: 1.1rem;
 }
-.collapsible {
+/* .collapsible, */
+fieldset {
     border-radius: 5px;
 }
 /*********** Stuff for the Admin Theme */

@@ -19,14 +19,13 @@
 .menu-toggle-button-icon::after {
   background: #222222;
 }
+tr.even {
+  background-color: inherit;
+}
 ******************************/
 
 .block-hero-no-image {
   background: #828282 url("../img/monochrome-medium.png");
-}
-
-tr.even {
-  background-color: inherit;
 }
 
 .unpublished,
@@ -49,7 +48,7 @@ input[disabled] {
 }
 
 button,
-[type="button"],
+/*[type="button"],*/
 [type="reset"],
 [type="submit"] {
   background: #dbdbd3 url("../img/monochrome.png");

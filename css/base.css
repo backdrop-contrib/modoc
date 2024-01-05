@@ -243,11 +243,11 @@ ul.links.inline li {
 ul.links.inline a {
   border: 1px solid;
   border-radius: 7px;
-  padding: .1em .5em;
+  padding: 0px .3em;  /*was .1em .5em;*/
   display: inline-block;
   text-decoration: none;
   white-space: nowrap;
-  margin: 0;
+  margin: 3px; /* was 0;*/
 }
 
 ul.links.inline a:hover {
