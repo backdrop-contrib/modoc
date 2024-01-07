@@ -89,8 +89,8 @@ tr.even {
 /*---------------------------*/
 /*   Menu Background         */
 
-.leaf a,
-.expanded a,
+.menu-dropdown .leaf a,
+.menu-dropdown .expanded a,
 .breadcrumb ol a,
 .form-checkbox,
 .block-system-main-menu {
@@ -127,7 +127,7 @@ ul.links.inline a:hover,
 .menu-dropdown ul a:hover,
 .menu-dropdown ul a:focus,
 .menu-dropdown ul a:active,
-.menu-dropdown ul a.highlighted {
+.menu-dropdown ul a .highlighted {
   background: #d2e1dc;
 }
 /*

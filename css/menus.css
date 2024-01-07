@@ -8,11 +8,13 @@
 /****************************/
 /* not sure if these are really needed */
 /* I need to mess around some more...  */
+/*
 .leaf,
 a.leaf{
   text-align: center;
 }
-
+//apparently, not needed 
+*/
 /*******  Header Menu (usually the account menu) **/
 /**************************************************/
 
