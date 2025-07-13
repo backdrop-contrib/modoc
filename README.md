@@ -23,7 +23,7 @@ Meanwhile, here are some tips:
   - 'border-7'
   - 'border-10' (10px)
   - combine any of the above with 'hide-overflow' (separated by a space)
-- *__Update:__* The logo image may now be scaled using the "Max Logo Width setting at `Appearance | Modoc Settings`. No need to prescale your logo.
+- *__Update:__* The logo image may now be scaled using the "Max Logo Width" setting at `Appearance | Modoc Settings`. No need to prescale your logo.
 
 ## Caveats
 
