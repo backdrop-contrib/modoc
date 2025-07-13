@@ -28,6 +28,7 @@ Meanwhile, here are some tips:
 ### To-Do
 - Done: ~~Add a box and button corner radius selection, for more styling options.~~
 - Add a default border line-weight selection, for more styling options.
+- Add the ability to save and later retrieve a custom color scheme.
 - Implement color gradients for buttons and block backgrounds.
 - Continue the never-ending process of refining and cleaning up the css.
 - etc.
