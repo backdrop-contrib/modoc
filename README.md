@@ -26,7 +26,8 @@ Meanwhile, here are some tips:
 - For vertical menus, you may want to set the Menu Style to 'Dropdown Menu' in order to make them look good. More work on this is pending.
 - More testing is required to make sure that menus work in every layout implementation, etc.
 ### To-Do
-- Add a box and button corner radius selection, for more styling options.
+- Done: ~~Add a box and button corner radius selection, for more styling options.~~
+- Add a default border line-weight selection, for more styling options.
 - Implement color gradients for buttons and block backgrounds.
 - Continue the never-ending process of refining and cleaning up the css.
 - etc.
