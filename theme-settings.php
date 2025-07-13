@@ -14,7 +14,7 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
   if (module_exists('color')) {
     
     
-/** GENERAL **/    
+/** GENERALS **/    
     $form['general'] = array(
       '#type' => 'fieldset',
       '#title' => t('General Colors'),
