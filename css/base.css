@@ -250,7 +250,7 @@ ul.links.inline li {
 
 ul.links.inline a {
   border: 1px solid;
-  border-radius: var(--brdr-radius);
+  border-radius: var(--butn-radius);
   padding: 0px .3em;  /*was .1em .5em;*/
   display: inline-block;
   text-decoration: none;

@@ -154,7 +154,7 @@ a.leaf{
   font: 1rem;
   line-height: 1rem;
   border: 1px solid;
-  border-radius: var(--brdr-radius);
+  border-radius: var(--butn-radius);
   margin: .3em;
   padding: .36em !important;
   line-height: 1em !important;
