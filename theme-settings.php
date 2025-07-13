@@ -160,7 +160,7 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'fieldset',
     '#title' => t('Sizes and Scales'),
     '#collapsible' => TRUE,
-    '#description' => t('Enter value with units of px, em, rem, %, etc. example: page width: "1200px" '),
+    '#description' => t('Enter value with units of px, em, rem, %, etc. example: page width: "1200px".'),
     );
   $form['sizes']['page_width'] = array(
     '#type' => 'textfield',
@@ -174,28 +174,28 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Block Corner Radius'),
     '#default_value' => theme_get_setting('block_corner_radius', 'modoc'),
     '#size' => '10',
-    '#description' => t(''),
+    '#description' => t('Assume px unless specified.'),
     );
   $form['sizes']['button_corner_radius'] = array(
     '#type' => 'textfield',
     '#title' => t('Button Corner Radius'),
     '#default_value' => theme_get_setting('button_corner_radius', 'modoc'),
     '#size' => '10',
-    '#description' => t(''),
+    '#description' => t('Assume px unless specified.'),
     );
   $form['sizes']['logo_max_width'] = array(
     '#type' => 'textfield',
     '#title' => t('Maximum Logo Width'),
     '#default_value' => theme_get_setting('logo_max_width', 'modoc'),
     '#size' => '10',
-    '#description' => t('Use this to scale the size of your Logo image.'),
+    '#description' => t('Use this to scale the size of your Logo image. Assume px unless specified.'),
     );
   $form['sizes']['text_scale'] = array(
     '#type' => 'textfield',
     '#title' => t('Base Font Size'),
     '#default_value' => theme_get_setting('text_scale', 'modoc'),
     '#size' => '10',
-    '#description' => t('**Experimental** This might mess things up. Modoc default is "90%"'),
+    '#description' => t('**Experimental** This might mess things up. Modoc default is "90%". Only % is allowed. Other units will have no effect.'),
     );
 
 }

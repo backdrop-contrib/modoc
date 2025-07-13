@@ -54,19 +54,47 @@ function modoc_preprocess_page(&$variables) {
   }                           
   if (($thefont = theme_get_setting('table_hd_font')) != 'newscycle') {
      backdrop_add_css("th {font-family: {$fonts[$thefont]}; }", $css_options);       
-  }                           
+  }
+
   if (theme_get_setting('page_width')) {
-     $max_width = theme_get_setting('page_width');
-     backdrop_add_css(".layout {max-width: {$max_width}; }", $css_options);
-  }                           
+    $max_width = theme_get_setting('page_width');
+    if ($max_width !== '' && preg_match('/^\d+(\.\d+)?$/', $max_width)) {
+      $max_width .= 'px';
+    }
+    if ($max_width !== '') {
+      backdrop_add_css(".layout {max-width: {$max_width}; }", $css_options);
+    } 
+  }
+
   if (theme_get_setting('logo_max_width')) {
-     $logo_max_width = theme_get_setting('logo_max_width');
-     backdrop_add_css(".logo {max-width: {$logo_max_width}; }", $css_options);
-  }                           
+    $logo_max_width = theme_get_setting('logo_max_width');
+    if ($logo_max_width !== '' && preg_match('/^\d+(\.\d+)?$/', $logo_max_width)) {
+      $logo_max_width .= 'px';
+    }
+    if ($logo_max_width !== '') {
+      backdrop_add_css(".logo {max-width: {$logo_max_width}; }", $css_options);
+    }
+  }
+
   if (theme_get_setting('text_scale')) {
-     $font_size = theme_get_setting('text_scale');
-     backdrop_add_css("html { font-size: {$font_size}; }", $css_options);
-  }                           
+    $font_size = theme_get_setting('text_scale');
+    // Digits (optionally with a decimal) but **no unit** → treat as %
+    if (preg_match('/^\d+(\.\d+)?$/', $font_size)) {
+      $font_size .= '%';
+    }
+    // Otherwise it must be digits+%          → leave as-is
+    elseif (!preg_match('/^\d+(\.\d+)?%$/', $font_size)) {
+      // Invalid entry – decide what to do:
+      // • Bail out (silently)
+      // • or pick a safe fallback:
+      //   $font_size = '100%';
+      $font_size = '';   // bail-out version
+    }
+    // Only inject CSS if we ended up with something valid.
+    if ($font_size !== '') {
+    backdrop_add_css("html { font-size: {$font_size}; }", $css_options);
+    }
+  }                         
 /* --- */
 
   $node = menu_get_object();
