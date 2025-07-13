@@ -207,7 +207,7 @@
 
 .view-promoted article ul.links.inline li {
   margin: 0;
-  xpadding: 0;
+/*  xpadding: 0;*/
 }
 
 .item-list .pager li {
@@ -238,7 +238,7 @@ table.sticky-enabled {
 
 ul.inline,
 ul.links.inline {
-  xpadding: 0;
+/*  xpadding: 0;*/
   display: flex;
   flex-wrap: wrap;
 }
