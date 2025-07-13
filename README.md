@@ -11,7 +11,7 @@ Full documentation will be developed as time and resources permit. You may also 
 Meanwhile, here are some tips:
 - Particularly useful for side menus and blocks: you may add the css class 'hide-overflow' to any block through the UI (see below). this will truncate the contents rather than having them bleed into the body of the next layout column to the right.
 - The easiest way to get rid of all the block borders is to set the block border color the same as the page background color.
-- The default block border width is one pixel. To change that, you may add the following css classes to any block through the admin UI (Configure Block | Style Settings | Style:Default -> Additional CSS Classes):
+- The default block border width is one pixel. To change that, you may add the following css classes to any block through the admin UI at `Configure Block | Style Settings | Style:Default -> Additional CSS Classes`:
   - 'border-0' (no border)
   - 'border-2' (2px)
   - 'border-3' (3px...)
@@ -19,7 +19,7 @@ Meanwhile, here are some tips:
   - 'border-7'
   - 'border-10' (10px)
   - combine any of the above with 'hide-overflow' (separated by a space)
-- The logo image is not scaled in css, thus it must be pre-scaled prior to uploading. I have found an image height of 75 to 125 pixels to work well. Here's my favorite resizing tool: https://onlinepngtools.com/resize-png
+- *Update:* The logo image may now be scaled using the "Max Logo Width setting at `Appearance | Modoc Settings`. No need to prescale your logo.
 
 ## Caveats
 
