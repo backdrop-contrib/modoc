@@ -10,7 +10,7 @@
 Full documentation will be developed as time and resources permit. You may also visit our wiki at https://github.com/backdrop-contrib/modoc/wiki
 Meanwhile, here are some tips:
 
-### Available settings located at `Appearance | Modoc Settings`
+ ### Available settings located at `Appearance | Modoc Settings`
 
 - You may now set the border radius for Blocks and for Buttons (two separate settings).
 - Particularly useful for side menus and blocks: you may add the css class 'hide-overflow' to any block through the UI (see below). this will truncate the contents rather than having them bleed into the body of the next layout column to the right.
