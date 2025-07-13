@@ -6,6 +6,28 @@
 function modoc_preprocess_page(&$variables) {
   backdrop_add_library('system', 'opensans', TRUE);
 
+/* --- BLOCK RADIUS --- */
+  // 1. Pull the saved value.
+  $brdr_radius = theme_get_setting('block_corner_radius', 'modoc');
+  $butn_radius = theme_get_setting('button_corner_radius', 'modoc');
+
+  // 2. If the editor typed only digits, assume pixels.
+  if ($brdr_radius !== '' && preg_match('/^\d+$/', $brdr_radius))  $brdr_radius .= 'px';
+  if ($butn_radius !== '' && preg_match('/^\d+$/', $butn_radius))  $butn_radius .= 'px';
+  
+
+  // 3. Expose it to CSS as an inline custom property on <html>.
+  if ($brdr_radius !== '')  $variables['html_attributes']['style'][] = "--brdr-radius: {$brdr_radius};";
+  if ($butn_radius !== '')  $variables['html_attributes']['style'][] = "--butn-radius: {$butn_radius};";
+  
+
+  // 4. Make it available to JavaScript.
+  backdrop_add_js(['modoc' => ['block_corner_radius'  => $brdr_radius,
+                              'button_corner_radius' => $butn_radius,
+                              ]],
+                              'setting'
+                 );
+
 /* --- Inject Typeface CSS --- */
   $css_options = array ('type' => 'inline', 
                              'group' => CSS_THEME,
@@ -25,7 +47,7 @@ function modoc_preprocess_page(&$variables) {
      backdrop_add_css("h1,h2,h3,h4,h5 {font-family: {$fonts[$thefont]}; }", $css_options);       
   }                           
   if (($thefont = theme_get_setting('main_menu_font')) != 'lekton') {
-     backdrop_add_css(".block-system-main-menu a { font-family: {$fonts[$thefont]}; }", $css_options);       
+     backdrop_add_css(".block-system-main-menu a, .leaf a { font-family: {$fonts[$thefont]}; }", $css_options);       
   }                           
   if (($thefont = theme_get_setting('sidebar_menu_font')) != 'montserrat') {
      backdrop_add_css(".block-menu-menu-sidebar a { font-family:  {$fonts[$thefont]}; }", $css_options);       
@@ -36,6 +58,10 @@ function modoc_preprocess_page(&$variables) {
   if (theme_get_setting('page_width')) {
      $max_width = theme_get_setting('page_width');
      backdrop_add_css(".layout {max-width: {$max_width}; }", $css_options);
+  }                           
+  if (theme_get_setting('logo_max_width')) {
+     $logo_max_width = theme_get_setting('logo_max_width');
+     backdrop_add_css(".logo {max-width: {$logo_max_width}; }", $css_options);
   }                           
   if (theme_get_setting('text_scale')) {
      $font_size = theme_get_setting('text_scale');

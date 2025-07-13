@@ -32,7 +32,7 @@ a.leaf{
   display: block;
   width: auto;
   border: 1px solid;
-  border-radius: 5px;
+  border-radius: var(--brdr-radius);
   margin: .5em;
   padding: 0 .5em;
   text-align: center;
@@ -81,7 +81,7 @@ a.leaf{
 .block-system-main-menu .active-trail a:focus-visible {
   box-shadow: 2px 2px 0;
   margin: 6px;
-  border-radius: 7px;
+  border-radius: var(--brdr-radius);
   padding: .2em;
 }
 */
@@ -111,7 +111,7 @@ a.leaf{
 
   box-shadow: 2px 2px 0;
   margin: 6px;
-  border-radius: 7px;
+  border-radius: var(--brdr-radius);
 }
 /*
 .block-system-main-menu .leaf a {
@@ -154,7 +154,7 @@ a.leaf{
   font: 1rem;
   line-height: 1rem;
   border: 1px solid;
-  border-radius: 5px;
+  border-radius: var(--brdr-radius);
   margin: .3em;
   padding: .36em !important;
   line-height: 1em !important;

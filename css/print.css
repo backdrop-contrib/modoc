@@ -1,26 +1,26 @@
 @media print {
 
-ul.primary {
-    line-height: .5;
-}
+    ul.primary {
+        line-height: .5;
+    }
 
-th {
-    font-family: 'Bench Nine', sans-serif;
-    font-size: 1rem;
-    line-height: 80%;
-}
+    th {
+        font-family: 'Bench Nine', sans-serif;
+        font-size: 1rem;
+        line-height: 80%;
+    }
 
-td {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+    td {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-h5 {
-    line-height: 1.1;
-}
+    h5 {
+        line-height: 1.1;
+    }
 
-a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
 }

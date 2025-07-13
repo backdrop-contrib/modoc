@@ -1,5 +1,12 @@
 /***  base.css  ***/
 
+/* css/variables.css */
+
+:root {
+  --brdr-radius: 5px;
+  --butn-radius: 5px;
+}
+
 .layout {
   max-width: 100%;
   padding: 0;
@@ -224,6 +231,7 @@
 }
 
 table.views-table,
+table.views-secondary-row-view-table,
 table.sticky-enabled {
   width: 100%;
 }
@@ -242,7 +250,7 @@ ul.links.inline li {
 
 ul.links.inline a {
   border: 1px solid;
-  border-radius: 7px;
+  border-radius: var(--brdr-radius);
   padding: 0px .3em;  /*was .1em .5em;*/
   display: inline-block;
   text-decoration: none;

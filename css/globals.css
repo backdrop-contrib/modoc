@@ -33,3 +33,19 @@ h1,h2,h3,h4,h5 {font-family: 'Lekton', serif;}
 /* VIEWS TABLE HEADINGS TEXT... */
 
 th {font-family: 'News Cycle', sans-serif;}
+
+/* SVG ICON SIZES... */
+
+.admin-panel svg.icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+    display: inline-block;
+    padding-right: 6px;
+}
+
+/* Drag File to Upload... */
+#file-upload-area.drag-over {
+    border-color: #000;
+    background-color: #f9f9f9;
+}

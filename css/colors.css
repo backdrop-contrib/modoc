@@ -99,10 +99,16 @@ tr.even {
 
 /* Button Background, same as Menu Background */
 .button,
+.button a,
 ul.links.inline a {
+  color: #0f0f0f !important;
   background: #c8d7d2;
-    
 }
+
+.button a:hover {
+  background: transparent;
+}
+
 /*
 .block-system-main-menu {
   background: #c8d7d2;

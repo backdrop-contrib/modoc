@@ -3,6 +3,8 @@ description = Modoc is optimized for tables and blocks, maximizing the amount of
 type = theme
 backdrop = 1.x
 
+scripts[] = js/dynamic-radius.js
+
 stylesheets[all][] = css/base.css
 stylesheets[all][] = css/b-forms.css
 stylesheets[all][] = css/contents.css

@@ -29,12 +29,12 @@ ul.primary li a {
   padding: .5rem 1rem;
   position: relative;
   margin-bottom: -1px;
-  border-radius: 5px;
+  border-radius: var(--butn-radius);
 }
 
 ul.primary li.active a,
 ul.primary li.active a:hover {
-  border-radius: 5px;
+  border-radius: var(--butn-radius);
 }
 
 .form-item,
@@ -65,7 +65,7 @@ input[type="date"],
 input[type="time"],
 select {
   border: 1px solid;
-  border-radius: 5px;
+  border-radius: var(--brdr-radius);
   padding: .3rem;
 }
 
@@ -93,7 +93,7 @@ button,
   border: 1px solid;
   margin: .5em 1em .5em 0;
   padding: .2em .5em;
-  border-radius: 5px;
+  border-radius: var(--butn-radius);
   /*background: transparent !important;  experimental -efoy */
 }
 [dir="rtl"] button,
@@ -178,7 +178,7 @@ a.form-cancel {
   margin: 0 1rem 0 0;/* LTR */
   padding: .2rem .5rem;
   border: 1px solid;
-  border-radius: 5px;
+  border-radius: var(--butn-radius);
   text-decoration: none;
 }
 
@@ -197,6 +197,15 @@ a.form-cancel:focus {
 }
 
 .button a:active {
+  transform: translateY(2px);
+}
+.tight-button {
+  border: 1px solid;
+  margin: 0 1em 0 0;
+  padding: 0 .3em;
+  border-radius: var(--butn-radius);
+}
+.tight-button a:active {
   transform: translateY(2px);
 }
 
@@ -231,11 +240,11 @@ fieldset .fieldset-title {
 }
 /* .collapsible, */
 fieldset {
-    border-radius: 5px;
+    border-radius: var(--brdr-radius);
 }
 /*********** Stuff for the Admin Theme */
 .views-grid-box {
-    border-radius: 5px;
+    border-radius: var(--brdr-radius);
 }
 .views-ui-display-tab-bucket h3{
     font-size:1.3rem;
@@ -266,7 +275,7 @@ fieldset {
 
 .js .dropbutton-widget {
   border: 1px solid #000;
-  border-radius: 5px;
+  border-radius: var(--butn-radius);
 }
 
 .dropbutton-widget a {

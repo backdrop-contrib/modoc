@@ -3,12 +3,7 @@
  * @file
  * Theme settings file for Modoc.
  *
- * Although Modoc itself does not provide any settings, we use this file to
- * inform the user that the module supports color schemes if the Color module
- * is enabled.
  */
-
-
 
 
 /**
@@ -165,14 +160,35 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
     '#type' => 'fieldset',
     '#title' => t('Sizes and Scales'),
     '#collapsible' => TRUE,
-    '#description' => t('Enter value with units of px or %. example: page width: "1200px" '),
-  );
+    '#description' => t('Enter value with units of px, em, rem, %, etc. example: page width: "1200px" '),
+    );
   $form['sizes']['page_width'] = array(
     '#type' => 'textfield',
     '#title' => t('Maximum Page Width'),
     '#default_value' => theme_get_setting('page_width', 'modoc'),
     '#size' => '10',
     '#description' => t('**Warning** Entering too small a value will require you to disable the Modoc theme in order to return to default settings.'),
+    );
+  $form['sizes']['block_corner_radius'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Block Corner Radius'),
+    '#default_value' => theme_get_setting('block_corner_radius', 'modoc'),
+    '#size' => '10',
+    '#description' => t(''),
+    );
+  $form['sizes']['button_corner_radius'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Button Corner Radius'),
+    '#default_value' => theme_get_setting('button_corner_radius', 'modoc'),
+    '#size' => '10',
+    '#description' => t(''),
+    );
+  $form['sizes']['logo_max_width'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Maximum Logo Width'),
+    '#default_value' => theme_get_setting('logo_max_width', 'modoc'),
+    '#size' => '10',
+    '#description' => t('Use this to scale the size of your Logo image.'),
     );
   $form['sizes']['text_scale'] = array(
     '#type' => 'textfield',
