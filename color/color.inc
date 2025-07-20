@@ -16,6 +16,7 @@ $info = array(
     'menuhl' => t('Menu Highlight'),
     'tablerow' => t('Table Rows'),
     'sortcol' => t('Active Sort Column'),
+    'cellbrdr' => t('Table Cell Borders'),
   ),
   // Pre-defined color schemes.
   'schemes' => array(
@@ -35,6 +36,7 @@ $info = array(
         'menuhl' => '#d2e1dc',
         'tablerow' => '#e6e6e6',
         'sortcol' => '#dcdcdc',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'red' => array(
@@ -53,6 +55,7 @@ $info = array(
         'menuhl' => '#fe5c61',
         'tablerow' => '#fce3e2',
         'sortcol' => '#fececd',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'green' => array(
@@ -71,6 +74,7 @@ $info = array(
         'menuhl' => '#76f268',
         'tablerow' => '#d0ddd0',
         'sortcol' => '#cbe4d3',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'blue' => array(
@@ -89,6 +93,7 @@ $info = array(
         'menuhl' => '#e7e773',
         'tablerow' => '#d6e2e9',
         'sortcol' => '#d1e1e7',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'mono' => array(
@@ -107,6 +112,7 @@ $info = array(
         'menuhl' => '#e2e2e2',
         'tablerow' => '#e1e1e1',
         'sortcol' => '#e0e0e0',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'navy' => array(
@@ -125,6 +131,7 @@ $info = array(
         'menuhl' => '#e8b00f',
         'tablerow' => '#dadee0',
         'sortcol' => '#d2d7dc',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'army' => array(
@@ -143,6 +150,7 @@ $info = array(
         'menuhl' => '#cecaa5',
         'tablerow' => '#e1e1d2',
         'sortcol' => '#eeeac5',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'usaf' => array(
@@ -161,6 +169,7 @@ $info = array(
         'menuhl' => '#d2af39',
         'tablerow' => '#faf0c8',
         'sortcol' => '#fae6af',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
     'cga' => array(
@@ -179,6 +188,7 @@ $info = array(
         'menuhl' => '#eaf55a',
         'tablerow' => '#8d2c1b',
         'sortcol' => '#1b6903',
+        'cellbrdr' => '#aaaaab',
       ),
     ),
   ),

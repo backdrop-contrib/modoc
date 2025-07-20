@@ -43,9 +43,3 @@ th {font-family: 'News Cycle', sans-serif;}
     display: inline-block;
     padding-right: 6px;
 }
-
-/* Drag File to Upload... */
-#file-upload-area.drag-over {
-    border-color: #000;
-    background-color: #f9f9f9;
-}

@@ -15,6 +15,7 @@
     Table Rows          e6e6e6    #e6e6e6
     Active Sort Column  dcdcdc    #dcdcdc
     Table Headings      dcdcdc    #dcdcdc
+    Table Cell Borders  aaaaab    #aaaaab
     
 */    
 
@@ -161,6 +162,7 @@ ul.links.inline a:hover,
 /*---------------------------*/
 /*   Table Rows              */
 
+.breadcrumb ol a,
 tr.odd {
   background-color: #e6e6e6;
 }
@@ -177,4 +179,16 @@ td.active {
 
 th {
   background-color: #dcdcdc;
+}
+
+/*---------------------------*/
+/*   Table Cell Borders      */
+
+th,
+td {
+  border-bottom-color: #aaaaab;
+}
+
+fieldset {
+  border-color: #aaaaab;
 }

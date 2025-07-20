@@ -71,7 +71,9 @@ th {
 }
 
 td {
-    padding: .15rem 5px;
+  padding: .15rem 5px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
 }
 
 figure {
@@ -119,6 +121,9 @@ blockquote::before {
 .border-0 {
     border-style: none;
 }
+.border-1 {
+    border-width: 1px;
+}
 .border-2{
     border-width: 2px;
 }
@@ -141,4 +146,14 @@ blockquote::before {
 
 .field-name-field-tags .field-label {
   margin-right: 1em;
+}
+
+.rowlines-1 {
+  border-bottom-width: 1px;
+}
+.rowlines-2 {
+  border-bottom-width: 2px;
+}
+.rowlines-3 {
+  border-bottom-width: 3px;
 }

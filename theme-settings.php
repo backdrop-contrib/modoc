@@ -14,7 +14,7 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
   if (module_exists('color')) {
     
     
-/** GENERALS **/    
+/** GENERAL **/    
     $form['general'] = array(
       '#type' => 'fieldset',
       '#title' => t('General Colors'),
@@ -27,6 +27,7 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
       'border',
       'tablerow',
       'sortcol',
+      'cellbrdr',
     );
     foreach ($fields as $field) {
       $form['general'][$field] = color_get_color_element($form['theme']['#value'], $field, $form);
@@ -161,7 +162,7 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => t('Sizes and Scales'),
     '#collapsible' => TRUE,
     '#description' => t('Enter value with units of px, em, rem, %, etc. example: page width: "1200px".'),
-    );
+  );
   $form['sizes']['page_width'] = array(
     '#type' => 'textfield',
     '#title' => t('Maximum Page Width'),
@@ -169,7 +170,7 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
     '#size' => '10',
     '#description' => t('**Warning** Entering too small a value will require you to disable the Modoc theme in order to return to default settings.'),
     );
-  $form['sizes']['block_corner_radius'] = array(
+      $form['sizes']['block_corner_radius'] = array(
     '#type' => 'textfield',
     '#title' => t('Block Corner Radius'),
     '#default_value' => theme_get_setting('block_corner_radius', 'modoc'),
