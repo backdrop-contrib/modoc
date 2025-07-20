@@ -148,6 +148,9 @@ blockquote::before {
   margin-right: 1em;
 }
 
+.rowlines-0 {
+  border-bottom-width: 0;
+}
 .rowlines-1 {
   border-bottom-width: 1px;
 }
@@ -156,4 +159,13 @@ blockquote::before {
 }
 .rowlines-3 {
   border-bottom-width: 3px;
+}
+.rowlines-5 {
+  border-bottom-width: 5px;
+}
+.rowlines-7 {
+  border-bottom-width: 7px;
+}
+.rowlines-10 {
+  border-bottom-width: 10px;
 }
