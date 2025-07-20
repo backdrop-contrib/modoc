@@ -13,7 +13,24 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
   // Settings for color module.
   if (module_exists('color')) {
     
-    
+ // Save custom color scheme UI
+    $form['color_save'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Save Custom Color Set'),
+      '#collapsible' => TRUE,
+    );
+    $form['color_save']['custom_scheme_name'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Name for this color set'),
+      '#default_value' => '',
+      '#size' => 32,
+    );
+    $form['color_save']['save_custom_scheme'] = array(
+      '#type' => 'submit',
+      '#value' => t('Save Current Color Set'),
+      '#submit' => array('modoc_save_custom_color_scheme_submit'),
+    );
+   
 /** GENERAL **/    
     $form['general'] = array(
       '#type' => 'fieldset',
@@ -199,4 +216,33 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description' => t('**Experimental** This might mess things up. Modoc default is "90%". Only % is allowed. Other units will have no effect.'),
     );
 
+}
+
+function modoc_save_custom_color_scheme_submit($form, &$form_state) {
+  $name = trim($form_state['values']['custom_scheme_name']);
+  if (empty($name)) {
+    form_set_error('custom_scheme_name', t('Please enter a name for the color set.'));
+    return;
+  }
+
+  $theme = 'modoc';
+  $palette = theme_get_setting('color', $theme)['palette'];
+  $id = strtolower(preg_replace('/[^a-z0-9_]+/', '_', $name));
+
+  $custom_schemes = config_get('modoc.settings', 'custom_schemes');
+  if (!is_array($custom_schemes)) {
+    $custom_schemes = array();
+  }
+
+  $custom_schemes[$id] = array(
+    'title' => $name,
+    'colors' => $palette,
+  );
+
+  config_set('modoc.settings', 'custom_schemes', $custom_schemes);
+
+  backdrop_set_message(t('Color scheme "@name" saved. It is now available in the Color Set dropdown.', array('@name' => $name)));
+
+  // Optional: redirect back to theme settings to refresh form.
+  backdrop_goto('admin/appearance/settings/modoc');
 }

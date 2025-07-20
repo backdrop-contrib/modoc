@@ -222,3 +222,17 @@ $info = array(
   // Base file for image generation.
   //'base_image' => 'color/base.png',
 );
+
+// Load and inject user-defined custom color schemes.
+$custom_schemes = config_get('modoc.settings', 'custom_schemes');
+if (!empty($custom_schemes) && is_array($custom_schemes)) {
+  foreach ($custom_schemes as $id => $scheme) {
+    // Avoid overriding built-in schemes with the same ID.
+    if (!isset($info['schemes'][$id])) {
+      $info['schemes'][$id] = array(
+        'title' => $scheme['title'],
+        'colors' => $scheme['colors'],
+      );
+    }
+  }
+}
