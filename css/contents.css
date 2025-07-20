@@ -99,7 +99,7 @@ blockquote::before {
 /***** below Added by -EFoy */
 .block {
     border-style: solid;
-    border-width: 1px;
+    border-width: var(--brdr-width, 1px);
     border-radius: var(--brdr-radius);
     padding-left: 10px;
     padding-right: 5px;

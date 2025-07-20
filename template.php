@@ -8,22 +8,26 @@ function modoc_preprocess_page(&$variables) {
 
 /* --- BLOCK RADIUS --- */
   // 1. Pull the saved value.
+  $brdr_width = theme_get_setting('block_border_width', 'modoc');
   $brdr_radius = theme_get_setting('block_corner_radius', 'modoc');
   $butn_radius = theme_get_setting('button_corner_radius', 'modoc');
 
   // 2. If the editor typed only digits, assume pixels.
+  if ($brdr_width !== '' && preg_match('/^\d+$/', $brdr_width))  $brdr_width .= 'px';
   if ($brdr_radius !== '' && preg_match('/^\d+$/', $brdr_radius))  $brdr_radius .= 'px';
   if ($butn_radius !== '' && preg_match('/^\d+$/', $butn_radius))  $butn_radius .= 'px';
   
 
   // 3. Expose it to CSS as an inline custom property on <html>.
+  if ($brdr_width !== '')  $variables['html_attributes']['style'][] = "--brdr-width: {$brdr_width};";
   if ($brdr_radius !== '')  $variables['html_attributes']['style'][] = "--brdr-radius: {$brdr_radius};";
   if ($butn_radius !== '')  $variables['html_attributes']['style'][] = "--butn-radius: {$butn_radius};";
   
 
   // 4. Make it available to JavaScript.
-  backdrop_add_js(['modoc' => ['block_corner_radius'  => $brdr_radius,
-                              'button_corner_radius' => $butn_radius,
+  backdrop_add_js(['modoc' => ['block_border_width'  => $brdr_width,
+                               'block_corner_radius'  => $brdr_radius,
+                               'button_corner_radius' => $butn_radius,
                               ]],
                               'setting'
                  );

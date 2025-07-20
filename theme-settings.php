@@ -18,12 +18,13 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
       '#type' => 'fieldset',
       '#title' => t('Save Custom Color Set'),
       '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
     );
     $form['color_save']['custom_scheme_name'] = array(
       '#type' => 'textfield',
       '#title' => t('Name for this color set'),
       '#default_value' => '',
-      '#size' => 32,
+      '#size' => 30,
     );
     $form['color_save']['save_custom_scheme'] = array(
       '#type' => 'submit',
@@ -187,7 +188,14 @@ function modoc_form_system_theme_settings_alter(&$form, &$form_state) {
     '#size' => '10',
     '#description' => t('**Warning** Entering too small a value will require you to disable the Modoc theme in order to return to default settings.'),
     );
-      $form['sizes']['block_corner_radius'] = array(
+  $form['sizes']['block_border_width'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Block Border Width'),
+    '#default_value' => theme_get_setting('block_border_width', 'modoc'),
+    '#size' => '10',
+    '#description' => t('Assume px unless specified.'),
+    );
+  $form['sizes']['block_corner_radius'] = array(
     '#type' => 'textfield',
     '#title' => t('Block Corner Radius'),
     '#default_value' => theme_get_setting('block_corner_radius', 'modoc'),
