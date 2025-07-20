@@ -11,28 +11,47 @@ Full documentation will be developed as time and resources permit. You may also 
 Meanwhile, here are some tips:
 
  ### Available settings located at `Appearance | Modoc Settings`
-
+ #### New in ver. 1.x-1.2
 - You may now set the border radius for Blocks and for Buttons (two separate settings).
-- Particularly useful for side menus and blocks: you may add the css class 'hide-overflow' to any block through the UI (see below). this will truncate the contents rather than having them bleed into the body of the next layout column to the right.
+- The logo image may now be scaled using the "Max Logo Width" setting at `Appearance | Modoc Settings`. No need to prescale your logo.
+ #### Newer in ver. 1.x-1.3
+- You may now set the default Block border line width for all blocks.
+- An additional Color selector has been added: Table Cell Border color (also sets Fieldset borders).
+- *__Big News:__* You may now Save your custom color schemes, then come back to them later!
+
+ #### General Tips  
+- Particularly useful for side menus and blocks: you may add the CSS class 'hide-overflow' to any block through the UI (see below). this will truncate the contents rather than having them bleed into the body of the next layout column to the right.
 - The easiest way to get rid of *all* the block borders is to set the block border color the same as the page background color.
-- The default block border width is one pixel. To change that, you may add the following css classes to any block through the admin UI at `Configure Block | Style Settings | Style:Default -> Additional CSS Classes`:
+- To change the border-width of a block, you may add one of the following CSS classes to any block through the admin UI at `Configure Block | Style Settings | Style:Default -> Additional CSS Classes`:
   - 'border-0' (no border)
+  - 'border-1' (1px)
   - 'border-2' (2px)
   - 'border-3' (3px...)
   - 'border-5' 
   - 'border-7'
   - 'border-10' (10px)
   - combine any of the above with 'hide-overflow' (separated by a space)
-- *__Update:__* The logo image may now be scaled using the "Max Logo Width" setting at `Appearance | Modoc Settings`. No need to prescale your logo.
-
+- If you want change the line-weight of the lines between Table Rows, you may add one of the following CSS classes to the `Views | Table | Settings -> Row class`:
+  - 'rowlines-0' (no lines)
+  - 'rowlines-1' (1px)
+  - 'rowlines-2' (2px...)
+  - 'rowlines-3'
+  - 'rowlines-5'
+  - 'rowlines-7'
+  - 'rowlines-10' (10px, if you're feeling really spunky)
+- There are two CSS classes provided for convenience: 'button' and 'tight-button', which can be used to make a link look really nice. Do it by wrapping your link inside a span like this:
+  - `<span class="button" type="button"><a href="...">your button label</a></span>`
+    or
+  - `<span class="tight-button" type="button"><a href="...">your button label</a></span>`
+    
 ## Caveats
 
 - For vertical menus, you may want to set the Menu Style to 'Dropdown Menu' in order to make them look good. More work on this is pending.
 - More testing is required to make sure that menus work in every layout implementation, etc.
 ### To-Do
 - *__Done:__* ~~Add a box and button corner radius selection, for more styling options.~~
-- Add a default border line-weight selection, for more styling options.
-- Add the ability to save and later retrieve a custom color scheme.
+- *__Done:__* ~~Add a default border line-weight selection, for more styling options.~~
+- *__Done:__* ~~Add the ability to save and later retrieve a custom color scheme.~~
 - Implement color gradients for buttons and block backgrounds.
 - Continue the never-ending process of refining and cleaning up the css.
 - etc.
