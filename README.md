@@ -40,9 +40,9 @@ Meanwhile, here are some tips:
   - 'rowlines-7'
   - 'rowlines-10' (10px, if you're feeling really spunky)
 - There are two CSS classes provided for convenience: 'button' and 'tight-button', which can be used to make a link look really nice. Do it by wrapping your link inside a span like this:
-  - `<span class="button" type="button"><a href="...">your button label</a></span>`
+  - `\<span class="button" type="button"\>\<a href="..."\>your button label\</a\>\</span\>`
     or
-  - `<span class="tight-button" type="button"><a href="...">your button label</a></span>`
+  - `\<span class="tight-button" type="button"\>\<a href="..."\>your button label\</a\>\</span\>`
     
 ## Caveats
 
